@@ -12,6 +12,12 @@ test('Testando função em nome com letra minúscula', () => {
     expect(cliente.tudoLetraMinuscula()).toBe("erick soares");
 });
 
+test('Testando função em nome com letra maiúscula', () => {
+    let cliente = new Cliente()
+    cliente.nome = "Robson"
+    expect(cliente.tudoLetraMaiuscula()).toBe("ROBSON");
+});
+
 test('Testando validação de CPF, válido', () => {
     let cliente = new Cliente()
     cliente.cpf = "418.825.350-90"
